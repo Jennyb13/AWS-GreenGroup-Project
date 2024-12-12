@@ -128,6 +128,31 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra básica para las tarjetas */
 }
 
+.social-links {
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 24px; /* Tamaño del icono */
+    color: #000; /* Color de los iconos */
+    margin-right: 10px; /* Espacio entre los iconos */
+    text-decoration: none;
+    opacity: 0; /* Iconos ocultos por defecto */
+    transition: opacity 0.3s ease; /* Efecto de transición */
+}
+
+.custom-card:hover .social-icon {
+    opacity: 1; /* Los iconos se muestran al pasar el ratón sobre la tarjeta */
+}
+
+.social-icon:hover {
+    color: #0077b5; /* Color al pasar el ratón sobre el icono de LinkedIn */
+}
+
+.social-icon:last-child:hover {
+    color: #333; /* Color al pasar el ratón sobre el icono de GitHub */
+}
+
 
 /*FOOTER*/
 
