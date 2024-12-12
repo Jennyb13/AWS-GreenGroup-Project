@@ -77,7 +77,6 @@ body {
 
 /* Estilo del contenedor principal */
 .container, h1, h5, h6 {
-    color: rgb(16, 93, 210);
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -86,14 +85,13 @@ body {
 
 /* Estilo del contenedor principal */
 .main-content {
-    background-image: url('https://cdn.pixabay.com/photo/2013/07/13/11/50/plant-158798_960_720.png');
+    background-image: url('https://cdn.pixabay.com/photo/2016/06/02/02/31/background-1430103_960_720.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Para que la imagen se mantenga fija al hacer scroll */
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-    color: rgb(219, 221, 231);
     margin: 0;
 }
 
@@ -120,7 +118,7 @@ body {
 
 /* Efecto de hover: elevar la tarjeta */
 .custom-card:hover {
-    transform: translateY(-10px); /* Eleva la tarjeta */
+    transform: translateY(-30px); /* Eleva la tarjeta */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de elevación */
     z-index: 10;  /* Hace que la tarjeta se vea por encima de las demás */
 }

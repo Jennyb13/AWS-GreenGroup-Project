@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,88 +17,89 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="menu">
             <img src="img/creepercircle.png" alt="Logo">
             <div class="header-text">
-                <h1>AWS Proyecto Despliegue Web </h1>
+                <h1>AWS Proyecto Despliegue Web con ELB y App AS</h1>
                 <p> AWS Cloud Green Group!</p>
             </div>
         </nav>
     </header>
     <main class="main-content">
-       
+
         <!-- Barra de Busqueda -->
-    <section>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="searchInput" placeholder="Buscar frases...">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" id="searchButton" type="button">Buscar</button>
+        <section>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Buscar frases...">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" id="searchButton" type="button">Buscar</button>
+                        </div>
                     </div>
+                </div>
+                <div class="col-md-4">
+                    <select class="custom-select" id="categorySelect">
+                        <option value="author">Intereses</option>
+                        <option value="tag">Propuestas</option>
+                        <option value="phrase">Portfolio</option>
+                    </select>
                 </div>
             </div>
-            <div class="col-md-4">
-                <select class="custom-select" id="categorySelect">
-                    <option value="author">Intereses</option>
-                    <option value="tag">Propuestas</option>
-                    <option value="phrase">Portfolio</option>
-                </select>
+        </section>
+        <!-- Tarjetas resultado de busqueda -->
+        <section>
+            <h1 class="entry-title">Bienvenidos a la Web GreenGroup</h1>
+            <p>¡Nuestro Super Equipo! </p>
+            <div class="card">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                    <div class="col">
+                        <div class="card custom-card">
+                            <img src="img/noheli.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Noheli Salazar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card custom-card">
+                            <img src="img\Eliana.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Eliana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card custom-card">
+                            <img src="img\jenny.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Jenny</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card custom-card">
+                            <img src="img\Lucero.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Lucero</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card custom-card">
+                            <img src="img/noheli.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Amanda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </section>
-    <!-- Tarjetas resultado de busqueda -->
-    <section>
-        <h1 class="entry-title">Bienvenidos a la Web GreenGroup</h1>
-        <p>¡Nuestro Super Equipo! </p>
-        <div class="card">
-            <div class="row row-cols-1 row-cols-md-5 g-4">
-                <div class="col">
-                    <div class="card custom-card">
-                        <img src="img/noheli.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Noheli Salazar</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card custom-card">
-                        <img src="img\Eliana.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Eliana</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card custom-card">
-                        <img src="img\jenny.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Jenny</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card custom-card">
-                        <img src="img\Lucero.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Lucero</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card custom-card">
-                        <img src="img/noheli.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Amanda</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
+        </section>
     </main>
 
     <!--PIE DE PAGINA-->
