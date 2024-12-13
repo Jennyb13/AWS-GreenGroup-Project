@@ -25,6 +25,7 @@
             <div class="header-text">
                 <h1>AWS Proyecto Despliegue Web con ELB y App AS</h1>
                 <p> AWS Cloud Green Group!</p>
+                <p id="hostname"></p>
             </div>
         </nav>
     </header>
@@ -206,7 +207,13 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js" ></script>
+
+    <script class="ec2-info">
+        document.getElementById("hostname").innerHTML = "<div>  EC2 response: " + ip + "</div>";
+    </script>
 </body>
 
 </html>

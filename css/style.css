@@ -134,7 +134,7 @@ body {
 
 .social-icon {
     font-size: 24px; /* Tamaño del icono */
-    color: #000; /* Color de los iconos */
+    color: rgb(28, 98, 27); /* Color de los iconos */
     margin-right: 10px; /* Espacio entre los iconos */
     text-decoration: none;
     opacity: 0; /* Iconos ocultos por defecto */
